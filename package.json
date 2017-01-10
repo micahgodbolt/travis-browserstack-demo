@@ -1,0 +1,27 @@
+{
+  "name": "travis-browserstack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micahgodbolt/travis-browserstack-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micahgodbolt/travis-browserstack-demo/issues"
+  },
+  "homepage": "https://github.com/micahgodbolt/travis-browserstack-demo#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "wdio-browserstack-service": "^0.1.4",
+    "wdio-mocha-framework": "^0.5.8",
+    "wdio-selenium-standalone-service": "0.0.7",
+    "wdio-spec-reporter": "0.0.5",
+    "webdriverio": "^4.6.1"
+  }
+}
