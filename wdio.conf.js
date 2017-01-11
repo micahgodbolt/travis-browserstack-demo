@@ -7,9 +7,9 @@ exports.config = {
     // should work too though). These services define specific user and key (or access key)
     // values you need to put in here in order to connect to these services.
     //
-    services: ['browserstack'],
-    user: process.env.BROWSERSTACK_USER,
-    key: process.env.BROWSERSTACK_ACCESS_KEY,
+    services: ['selenium-standalone'],
+    // user: process.env.BROWSERSTACK_USER,
+    // key: process.env.BROWSERSTACK_ACCESS_KEY,
     //
     // ==================
     // Specify Test Files
@@ -29,10 +29,10 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
-        browserName: 'chrome',
-        platform: 'mac',
-        'browserstack.local': true,
-        'browserstack.localIdentifier': process.env.BROWSERSTACK_LOCAL_IDENTIFIER
+        browserName: 'chrome'
+        // platform: 'mac',
+        // 'browserstack.local': true,
+        // 'browserstack.localIdentifier': process.env.BROWSERSTACK_LOCAL_IDENTIFIER
     }],
     //
     // When enabled opens a debug port for node-inspector and pauses execution
@@ -85,6 +85,7 @@ exports.config = {
     // WebdriverRTC: https://github.com/webdriverio/webdriverrtc
     // Browserevent: https://github.com/webdriverio/browserevent
     plugins: {
+        'wdio-screenshot': {}
         // webdrivercss: {
         //     screenshotRoot: 'my-shots',
         //     failedComparisonsRoot: 'diffs',
