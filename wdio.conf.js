@@ -30,7 +30,7 @@ exports.config = {
     //
     capabilities: [{
         browserName: 'chrome',
-        platform: 'mac',
+        platform: 'Windows',
         'browserstack.local': true,
         'browserstack.localIdentifier': process.env.BROWSERSTACK_LOCAL_IDENTIFIER
     }],
