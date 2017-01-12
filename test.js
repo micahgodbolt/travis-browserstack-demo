@@ -9,7 +9,7 @@ describe('test page', function() {
            if (fs.existsSync('shots/myImage.png')) {
             fs.unlink('shots/myImage.png');  
            }
-            browser.saveElementScreenshot('shots/myImage.png', 'p');
+            browser.saveScreenshot('shots/myImage.png');
             var baseline = fs.readFileSync('baselines/myImage.png');
             var shot = fs.readFileSync('shots/myImage.png');
             var result = resemble(baseline).compareTo(shot).onComplete(function(data){
@@ -17,7 +17,7 @@ describe('test page', function() {
             });
         }
         else {
-            browser.saveElementScreenshot('./baselines/myImage.png', 'p');
+            browser.saveScreenshot('./baselines/myImage.png');
         }
        
 });
