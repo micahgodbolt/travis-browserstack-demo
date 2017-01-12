@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "http-server & wdio wdio.conf.js"
+    "test": "http-server & wdio wdio.conf.js",
+    "localTest": "wdio wdio.conf.local.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/micahgodbolt/travis-browserstack-demo#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
     "http-server": "^0.9.0",
     "node-resemble-js": "^0.2.0",
     "wdio-browserstack-service": "^0.1.4",

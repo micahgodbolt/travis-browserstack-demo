@@ -20,7 +20,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        'wdio.test.js'
+        'test.js'
     ],
     maxInstances: 10,
     //
