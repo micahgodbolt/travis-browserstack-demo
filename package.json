@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "wdio wdio.conf.js"
+    "test": "http-server & wdio wdio.conf.js"
   },
   "repository": {
     "type": "git",
