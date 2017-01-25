@@ -1,2 +1,3 @@
 node_modules
-username
+shots/
+wdio.conf.local.js

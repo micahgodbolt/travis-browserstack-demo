@@ -20,7 +20,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        'wdio.test.js'
+        'test.js'
     ],
     maxInstances: 10,
     //
@@ -30,7 +30,7 @@ exports.config = {
     //
     capabilities: [{
         browserName: 'chrome',
-        platform: 'mac',
+        platform: 'Windows',
         'browserstack.local': true,
         'browserstack.localIdentifier': process.env.BROWSERSTACK_LOCAL_IDENTIFIER
     }],
@@ -85,6 +85,7 @@ exports.config = {
     // WebdriverRTC: https://github.com/webdriverio/webdriverrtc
     // Browserevent: https://github.com/webdriverio/browserevent
     plugins: {
+        'wdio-screenshot': {}
         // webdrivercss: {
         //     screenshotRoot: 'my-shots',
         //     failedComparisonsRoot: 'diffs',
